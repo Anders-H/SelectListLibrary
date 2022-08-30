@@ -1,0 +1,12 @@
+C:\Users\hbom\Desktop\SelectListLibrary\SelectListLibrary\bin\Debug\net6.0-windows\SelectListLibrary.deps.json
+C:\Users\hbom\Desktop\SelectListLibrary\SelectListLibrary\bin\Debug\net6.0-windows\SelectListLibrary.dll
+C:\Users\hbom\Desktop\SelectListLibrary\SelectListLibrary\bin\Debug\net6.0-windows\SelectListLibrary.pdb
+C:\Users\hbom\Desktop\SelectListLibrary\SelectListLibrary\obj\Debug\net6.0-windows\SelectListLibrary.csproj.AssemblyReference.cache
+C:\Users\hbom\Desktop\SelectListLibrary\SelectListLibrary\obj\Debug\net6.0-windows\SelectListLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hbom\Desktop\SelectListLibrary\SelectListLibrary\obj\Debug\net6.0-windows\SelectListLibrary.AssemblyInfoInputs.cache
+C:\Users\hbom\Desktop\SelectListLibrary\SelectListLibrary\obj\Debug\net6.0-windows\SelectListLibrary.AssemblyInfo.cs
+C:\Users\hbom\Desktop\SelectListLibrary\SelectListLibrary\obj\Debug\net6.0-windows\SelectListLibrary.csproj.CoreCompileInputs.cache
+C:\Users\hbom\Desktop\SelectListLibrary\SelectListLibrary\obj\Debug\net6.0-windows\SelectListLibrary.dll
+C:\Users\hbom\Desktop\SelectListLibrary\SelectListLibrary\obj\Debug\net6.0-windows\refint\SelectListLibrary.dll
+C:\Users\hbom\Desktop\SelectListLibrary\SelectListLibrary\obj\Debug\net6.0-windows\SelectListLibrary.pdb
+C:\Users\hbom\Desktop\SelectListLibrary\SelectListLibrary\obj\Debug\net6.0-windows\ref\SelectListLibrary.dll
