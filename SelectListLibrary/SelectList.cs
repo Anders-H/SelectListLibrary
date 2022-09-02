@@ -22,7 +22,7 @@ public class SelectList : ListView
                 : base.SelectedItems[0];
         set
         {
-            SelectedItems.Clear();
+            SelectedItems?.Clear();
 
             if (value == null)
                 return;
@@ -40,7 +40,7 @@ public class SelectList : ListView
         if (item == null)
             return;
 
-        SelectedItems.Clear();
+        SelectedItems?.Clear();
         item.Selected = true;
         
         ItemSelected?.Invoke(this, new ItemSelectedEventArgs(item));
@@ -65,16 +65,13 @@ public class SelectList : ListView
     public ListViewItem AddItem(string text) =>
         AddItem(0, text, null);
 
-    public ListViewItem AddItem(string text, object? tag) =>
-        AddItem(0, text, tag);
-
     public ListViewItem AddItem(int imageIndex, string text) =>
         AddItem(imageIndex, text, null);
     
     public ListViewItem AddItem(int imageIndex, string text, object? tag)
     {
         var li = Items.Add(text);
-        li.ImageIndex = 0;
+        li.ImageIndex = imageIndex;
         li.Tag = tag;
         return li;
     }

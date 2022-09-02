@@ -12,8 +12,8 @@ namespace SelectListTestProject
         private void Form1_Load(object sender, EventArgs e)
         {
             selectList1.AddItem("Hello 1");
-            selectList1.AddItem("Hello 2");
-            selectList1.AddItem("Hello 3");
+            selectList1.AddItem(0, "Hello 2");
+            selectList1.AddItem(1, "Hello 3");
         }
 
         private void selectList1_ItemSelected(object sender, ItemSelectedEventArgs eventArgs) =>

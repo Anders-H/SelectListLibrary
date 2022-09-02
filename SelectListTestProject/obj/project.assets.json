@@ -2,7 +2,7 @@
   "version": 3,
   "targets": {
     "net6.0-windows7.0": {
-      "SelectListLibrary/1.0.0": {
+      "SelectListLibrary/1.0.2": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "compile": {
@@ -18,7 +18,7 @@
     }
   },
   "libraries": {
-    "SelectListLibrary/1.0.0": {
+    "SelectListLibrary/1.0.2": {
       "type": "project",
       "path": "../SelectListLibrary/SelectListLibrary.csproj",
       "msbuildProject": "../SelectListLibrary/SelectListLibrary.csproj"
@@ -26,7 +26,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0-windows7.0": [
-      "SelectListLibrary >= 1.0.0"
+      "SelectListLibrary >= 1.0.2"
     ]
   },
   "packageFolders": {
