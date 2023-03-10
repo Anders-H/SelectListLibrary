@@ -1,10 +1,10 @@
 {
   "version": 3,
   "targets": {
-    "net6.0-windows7.0": {
-      "SelectListLibrary/1.0.2": {
+    "net7.0-windows7.0": {
+      "SelectListLibrary/1.0.3": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
+        "framework": ".NETCoreApp,Version=v7.0",
         "compile": {
           "bin/placeholder/SelectListLibrary.dll": {}
         },
@@ -18,34 +18,32 @@
     }
   },
   "libraries": {
-    "SelectListLibrary/1.0.2": {
+    "SelectListLibrary/1.0.3": {
       "type": "project",
       "path": "../SelectListLibrary/SelectListLibrary.csproj",
       "msbuildProject": "../SelectListLibrary/SelectListLibrary.csproj"
     }
   },
   "projectFileDependencyGroups": {
-    "net6.0-windows7.0": [
-      "SelectListLibrary >= 1.0.2"
+    "net7.0-windows7.0": [
+      "SelectListLibrary >= 1.0.3"
     ]
   },
   "packageFolders": {
     "C:\\Users\\hbom\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\GitRepos\\SelectListLibrary\\SelectListTestProject\\SelectListTestProject.csproj",
+      "projectUniqueName": "D:\\GitRepos\\SelectListLibrary\\SelectListTestProject\\SelectListTestProject.csproj",
       "projectName": "SelectListTestProject",
-      "projectPath": "C:\\GitRepos\\SelectListLibrary\\SelectListTestProject\\SelectListTestProject.csproj",
+      "projectPath": "D:\\GitRepos\\SelectListLibrary\\SelectListTestProject\\SelectListTestProject.csproj",
       "packagesPath": "C:\\Users\\hbom\\.nuget\\packages\\",
-      "outputPath": "C:\\GitRepos\\SelectListLibrary\\SelectListTestProject\\obj\\",
+      "outputPath": "D:\\GitRepos\\SelectListLibrary\\SelectListTestProject\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
         "C:\\Users\\hbom\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -53,18 +51,19 @@
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "net6.0-windows"
+        "net7.0-windows"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "D:\\LocalNuget": {},
+        "https://www.nuget.org/api/v2/": {}
       },
       "frameworks": {
-        "net6.0-windows7.0": {
-          "targetAlias": "net6.0-windows",
+        "net7.0-windows7.0": {
+          "targetAlias": "net7.0-windows",
           "projectReferences": {
-            "C:\\GitRepos\\SelectListLibrary\\SelectListLibrary\\SelectListLibrary.csproj": {
-              "projectPath": "C:\\GitRepos\\SelectListLibrary\\SelectListLibrary\\SelectListLibrary.csproj"
+            "D:\\GitRepos\\SelectListLibrary\\SelectListLibrary\\SelectListLibrary.csproj": {
+              "projectPath": "D:\\GitRepos\\SelectListLibrary\\SelectListLibrary\\SelectListLibrary.csproj"
             }
           }
         }
@@ -76,8 +75,8 @@
       }
     },
     "frameworks": {
-      "net6.0-windows7.0": {
-        "targetAlias": "net6.0-windows",
+      "net7.0-windows7.0": {
+        "targetAlias": "net7.0-windows",
         "imports": [
           "net461",
           "net462",
@@ -97,7 +96,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
       }
     }
   }

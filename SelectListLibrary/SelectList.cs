@@ -4,15 +4,17 @@ public class SelectList : ListView
 {
     private new bool MultiSelect { get; set; }
     private new bool FullRowSelect { get; set; }
-    private new SelectedListViewItemCollection SelectedItems { get; }
 
-    public event ItemSelectedHandler ItemSelected;
+    public event ItemSelectedHandler? ItemSelected;
 
     public SelectList()
     {
         base.MultiSelect = false;
         base.FullRowSelect = true;
     }
+
+    private new SelectedListViewItemCollection SelectedItems =>
+        base.SelectedItems;
 
     public ListViewItem? SelectedItem
     {
@@ -22,7 +24,7 @@ public class SelectList : ListView
                 : base.SelectedItems[0];
         set
         {
-            SelectedItems?.Clear();
+            SelectedItems.Clear();
 
             if (value == null)
                 return;
@@ -40,7 +42,7 @@ public class SelectList : ListView
         if (item == null)
             return;
 
-        SelectedItems?.Clear();
+        SelectedItems.Clear();
         item.Selected = true;
         
         ItemSelected?.Invoke(this, new ItemSelectedEventArgs(item));
@@ -74,5 +76,22 @@ public class SelectList : ListView
         li.ImageIndex = imageIndex;
         li.Tag = tag;
         return li;
+    }
+
+    public bool Select(Func<ListViewItem, bool> criteria)
+    {
+        foreach (ListViewItem listViewItem in Items)
+        {
+            if (!criteria(listViewItem))
+                continue;
+
+            SelectedItems.Clear();
+            listViewItem.Selected = true;
+            listViewItem.EnsureVisible();
+            Focus();
+            return true;
+        }
+
+        return false;   
     }
 }
