@@ -1,10 +1,10 @@
 {
   "version": 3,
   "targets": {
-    "net7.0-windows7.0": {
-      "SelectListLibrary/1.0.3": {
+    "net8.0-windows7.0": {
+      "SelectListLibrary/1.0.4": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v7.0",
+        "framework": ".NETCoreApp,Version=v8.0",
         "compile": {
           "bin/placeholder/SelectListLibrary.dll": {}
         },
@@ -18,15 +18,15 @@
     }
   },
   "libraries": {
-    "SelectListLibrary/1.0.3": {
+    "SelectListLibrary/1.0.4": {
       "type": "project",
       "path": "../SelectListLibrary/SelectListLibrary.csproj",
       "msbuildProject": "../SelectListLibrary/SelectListLibrary.csproj"
     }
   },
   "projectFileDependencyGroups": {
-    "net7.0-windows7.0": [
-      "SelectListLibrary >= 1.0.3"
+    "net8.0-windows7.0": [
+      "SelectListLibrary >= 1.0.4"
     ]
   },
   "packageFolders": {
@@ -51,7 +51,7 @@
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "net7.0-windows"
+        "net8.0-windows"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -59,8 +59,8 @@
         "https://www.nuget.org/api/v2/": {}
       },
       "frameworks": {
-        "net7.0-windows7.0": {
-          "targetAlias": "net7.0-windows",
+        "net8.0-windows7.0": {
+          "targetAlias": "net8.0-windows",
           "projectReferences": {
             "D:\\GitRepos\\SelectListLibrary\\SelectListLibrary\\SelectListLibrary.csproj": {
               "projectPath": "D:\\GitRepos\\SelectListLibrary\\SelectListLibrary\\SelectListLibrary.csproj"
@@ -72,11 +72,17 @@
         "warnAsError": [
           "NU1605"
         ]
-      }
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "10.0.100"
     },
     "frameworks": {
-      "net7.0-windows7.0": {
-        "targetAlias": "net7.0-windows",
+      "net8.0-windows7.0": {
+        "targetAlias": "net8.0-windows",
         "imports": [
           "net461",
           "net462",
@@ -96,7 +102,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.100-rc.2.25502.107/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

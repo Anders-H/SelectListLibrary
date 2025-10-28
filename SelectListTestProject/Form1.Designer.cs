@@ -28,67 +28,105 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.selectList1 = new SelectListLibrary.SelectList();
-            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.SuspendLayout();
+            selectList1 = new SelectListLibrary.SelectList();
+            imageList1 = new ImageList(components);
+            button1 = new Button();
+            button2 = new Button();
+            button3 = new Button();
+            groupBox1 = new GroupBox();
+            groupBox2 = new GroupBox();
+            groupBox1.SuspendLayout();
+            groupBox2.SuspendLayout();
+            SuspendLayout();
             // 
             // selectList1
             // 
-            this.selectList1.FullRowSelect = true;
-            this.selectList1.LargeImageList = this.imageList1;
-            this.selectList1.Location = new System.Drawing.Point(80, 40);
-            this.selectList1.MultiSelect = false;
-            this.selectList1.Name = "selectList1";
-            this.selectList1.SelectedItem = null;
-            this.selectList1.Size = new System.Drawing.Size(436, 304);
-            this.selectList1.TabIndex = 0;
-            this.selectList1.UseCompatibleStateImageBehavior = false;
-            this.selectList1.ItemSelected += new SelectListLibrary.ItemSelectedHandler(this.selectList1_ItemSelected);
+            selectList1.FullRowSelect = true;
+            selectList1.LargeImageList = imageList1;
+            selectList1.Location = new Point(8, 24);
+            selectList1.MultiSelect = false;
+            selectList1.Name = "selectList1";
+            selectList1.SelectedItem = null;
+            selectList1.Size = new Size(248, 172);
+            selectList1.TabIndex = 0;
+            selectList1.UseCompatibleStateImageBehavior = false;
+            selectList1.ItemSelected += selectList1_ItemSelected;
             // 
             // imageList1
             // 
-            this.imageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth24Bit;
-            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
-            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageList1.Images.SetKeyName(0, "game.png");
-            this.imageList1.Images.SetKeyName(1, "test.png");
+            imageList1.ColorDepth = ColorDepth.Depth24Bit;
+            imageList1.ImageStream = (ImageListStreamer)resources.GetObject("imageList1.ImageStream");
+            imageList1.TransparentColor = Color.Transparent;
+            imageList1.Images.SetKeyName(0, "game.png");
+            imageList1.Images.SetKeyName(1, "test.png");
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(40, 380);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Select";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            button1.Location = new Point(8, 200);
+            button1.Name = "button1";
+            button1.Size = new Size(75, 23);
+            button1.TabIndex = 1;
+            button1.Text = "Select";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(288, 392);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Prompt...";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            button2.Location = new Point(8, 24);
+            button2.Name = "button2";
+            button2.Size = new Size(156, 23);
+            button2.TabIndex = 2;
+            button2.Text = "Prompt...";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
+            // 
+            // button3
+            // 
+            button3.Location = new Point(8, 52);
+            button3.Name = "button3";
+            button3.Size = new Size(156, 23);
+            button3.TabIndex = 3;
+            button3.Text = "Prompt with default...";
+            button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
+            // 
+            // groupBox1
+            // 
+            groupBox1.Controls.Add(selectList1);
+            groupBox1.Controls.Add(button1);
+            groupBox1.Location = new Point(4, 4);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Size = new Size(264, 232);
+            groupBox1.TabIndex = 4;
+            groupBox1.TabStop = false;
+            groupBox1.Text = "Select from existing list";
+            // 
+            // groupBox2
+            // 
+            groupBox2.Controls.Add(button2);
+            groupBox2.Controls.Add(button3);
+            groupBox2.Location = new Point(276, 4);
+            groupBox2.Name = "groupBox2";
+            groupBox2.Size = new Size(172, 80);
+            groupBox2.TabIndex = 5;
+            groupBox2.TabStop = false;
+            groupBox2.Text = "Prompt for a value";
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.selectList1);
-            this.Name = "Form1";
-            this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
-            this.ResumeLayout(false);
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(469, 244);
+            Controls.Add(groupBox2);
+            Controls.Add(groupBox1);
+            Name = "Form1";
+            Text = "Form1";
+            Load += Form1_Load;
+            groupBox1.ResumeLayout(false);
+            groupBox2.ResumeLayout(false);
+            ResumeLayout(false);
 
         }
 
@@ -98,5 +136,8 @@
         private ImageList imageList1;
         private Button button1;
         private Button button2;
+        private Button button3;
+        private GroupBox groupBox1;
+        private GroupBox groupBox2;
     }
 }

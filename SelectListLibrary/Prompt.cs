@@ -48,6 +48,13 @@ public class Prompt
         return li;
     }
 
+    public ListViewItem AddItem(int imageIndex, string text, object? tag, params string[] columns)
+    {
+        var item = AddItem(imageIndex, text, tag);
+
+        return item;
+    }
+
     public ListViewItem? Ask(IWin32Window owner)
     {
         var x = new PromptDialog();

@@ -1,4 +1,5 @@
-﻿namespace SelectListLibrary;
+﻿#pragma warning disable CA1416
+namespace SelectListLibrary;
 
 public class SelectList : ListView
 {
