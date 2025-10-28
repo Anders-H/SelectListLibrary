@@ -10,6 +10,10 @@
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageLicenseExpression>AFL-3.0</PackageLicenseExpression>
     <PackageReleaseNotes>Moved to .NET 8.0, and better examples.</PackageReleaseNotes>
+    <Title>Select List Library</Title>
+    <Description>The SelectListLibrary holds controls (currently one) for letting a user select *one* item from a list. Uses Windows Forms in .NET 8.0.</Description>
+    <RepositoryUrl>https://github.com/Anders-H/SelectListLibrary</RepositoryUrl>
+    <PackageIcon>selectlist.png</PackageIcon>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -22,6 +26,10 @@
 
   <ItemGroup>
     <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\selectlist.png">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>
